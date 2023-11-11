@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furnio</title>
+     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="hero">
+      <div class="heroNavbarParent">
+        <div class="heroNavbar row align-items-center ">
+          <div class="col-md-9 col-sm-9 col-xs-9 d-flex   ">
+               <div class="">
+                   <div class="d-flex align-items-center">
+                       <img src="images/Meubel House_Logos-05.svg" alt="logo">
+                       <h1 class="px-2">Furniro</h1>
+                   </div>
+               </div>
+                 <nav class="navbar navbar-expand-lg  heroNavMid">
+                     <div class="container-fluid">
+                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                       </button>
+                       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                         <div class="navbar-nav w-100 justify-content-between">
+                           <a class="nav-link active" aria-current="page" href="file:///C:/projects/furniture%20website/index.html">Home</a>
+                           <a class="nav-link" href="file:///C:/projects/furniture%20website/shop.html">Shop</a>
+                           <a class="nav-link" href="#">About</a>
+                           <a class="nav-link" href="#">Contact</a>
+                         </div>
+                       </div>
+                     </div>
+                   </nav>
+                 
+            
+                 </div>
+                 <div class="col-md-3 col-sm-3 col-xs-3 d-flex justify-content-evenly navbarIcons">
+                     <a href="#"><img src="images/mdi_account-alert-outline.svg" alt=""></a>
+                     <a href="#"><img src="images/akar-icons_search.svg" alt=""></a>
+                     <a href="#"><img src="images/akar-icons_heart.svg" alt=""></a>
+                     <a href="#" class="cartIconDiv" id="cartIcon"><img src="images/ant-design_shopping-cart-outlined.svg" alt="">
+                       <div class="cartItemsTotalNum"><b>0</b> </div>
+                     </a>
+                     
+                 </div>
+
+
+     </div> 
+      </div>
+      <div class="cart" id="cartModel">
+        <div class="cartContent p-4">
+          <div class="d-flex justify-content-between">
+            <h2>Shopping Cart</h2>
+            <img class="exitCart" id="closeCartBtn" src="images/Group.svg" alt="">
+          </div>
+          <div class="underLine">
+          </div>
+          <div id="cartItems">
+            <!-- <div class="productRow">
+              <div class="cartProduct d-flex justify-content-between align-items-center">
+                <div class="cartImgDiv">
+                  <img class="w-100" src="images/Asgaard sofa 5 (2).svg" alt="">
+                </div>
+                <div class="cartProductContent">
+                  <p class="cartProductName">Asgaard sofa</p>
+                  <div class="d-flex productDetails align-items-center justify-content-between align-items-center">
+                    <div class=" d-flex justify-content-between units">
+                      <div class="minusBtn d-flex justify-content-center align-items-center"><b>-</b></div>
+                      <div class="itemQuantity">1</div>
+                      <div class="plusBtn d-flex justify-content-center align-items-center"><b>+</b></div>
+                    </div>
+                    <b>X</b>
+                    <p class="cartProductPrice">25000 EGP</p>
+                  </div>
+                </div>
+                <div class="deleteProduct d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-x"></i>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <div class="d-flex py-3 subtotal justify-content-between" id="subtotalCart">
+            <p>Subtotal</p>
+            <b class="totalPrice">EGP 0</b>
+          </div>
+          <div class="subtotalLine">
+          </div>
+          <div class="d-flex justify-content-between">
+            <button class="cartButtons">Cart</button>
+            <button class="cartButtons">Checkout</button>
+            <button class="cartButtons">Coparison</button>
+
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="itemPageBar">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between  itemPageBarContent ">
+          <p class="itemBarPages">Home</p>
+          <img class="" src="images/dashicons_arrow-down-alt2.svg" alt="">
+          <p class="itemBarPages">Shop</p>
+          <img class="" src="images/dashicons_arrow-down-alt2.svg" alt="">
+          <div class="virticalLine"></div>
+          <P class="barItemName">Asgaard sofa</P>
+        </div>
+
+      </div>
+    </div>
+    <div class="itemPageProduct container">
+      <div class=" row">
+        <div class="itemPageProductLeftSide col-md-6 d-flex">
+          <div>
+            <div class="productImages">
+              
+            </div>
+            <br>
+            <div class="productImages">
+               
+            </div>
+            <br>
+            <div class="productImages">
+               
+            </div>
+            <br>
+            <div class="productImages">
+             
+            </div>
+          </div>
+          <div class="productMainImg">
+             
+          </div>
+  
+        </div>
+        <div class="itemPageProductRightSide col-md-6">
+  
+        </div>
+      </div>
+    </div>
+
+    <!-- products section start -->
+    <div class="products">
+      <div class="container">
+        <h3 class="text-center">Related Products</h3>
+
+        <div class="row" id="productsContainer">
+          <div class=" col-lg-3 col-md-4 col-sm-6 ">
+            <div class="productCard m-2 my-4">
+              <img class="w-100 productImage" src="images/image 9.jpg" alt="">
+              <div class="cardContent">
+                <h5 class="itemName">Lampshades</h5>
+                <p class="discreption">Night lamp</p>
+                <div class=" d-flex justify-content-between">
+                  <h6 class="productPrice">EGP 1500</h6>
+                   
+                </div>
+              </div>
+              <div class="d-flex justify-content-center w-100 addToCartBtnParent ">
+                <button class="addToCartBtn">Add to cart</button>
+                </div>
+                <div class="d-flex justify-content-center w-100 showProductParent ">
+                <a href="#"><button class="showProductBtn">Show Product</button></a>
+                </div>
+              <div class="secoundLayer d-flex  align-items-center">
+                <div class="w-100 text-center">
+                  <div class="cartMedia d-flex justify-content-evenly">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-share-nodes"></i>
+                      <a href="#"><p>Share</p></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      <a href="#"><p>Compare</p></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <a href="#"><p>Like</p></a> 
+                    </div>
+    
+                  </div>
+                </div>
+            </div>
+            <span class="clear d-flex justify-content-center align-items-center">vdd</span>
+
+            </div>
+            
+          </div>
+          <div class=" col-lg-3 col-md-4 col-sm-6 ">
+            <div class="productCard m-2 my-4">
+              <img class="w-100 productImage" src="images/image 6.jpg" alt="">
+              <div class="cardContent">
+                <h5 class="itemName">Mug</h5>
+                <p class="discreption">Small mug</p>
+                <div class=" d-flex justify-content-between">
+                  <h6 class="productPrice">EGP 1500</h6>
+                  
+                </div>
+              </div>
+              <div class="d-flex justify-content-center w-100 addToCartBtnParent ">
+                <button class="addToCartBtn">Add to cart</button>
+                </div>
+                <div class="d-flex justify-content-center w-100 showProductParent ">
+                <a href="#"><button class="showProductBtn">Show Product</button></a>
+                </div>
+              <div class="secoundLayer d-flex  align-items-center">
+                <div class="w-100 text-center">
+                  <div class="cartMedia d-flex justify-content-evenly">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-share-nodes"></i>
+                      <a href="#"><p>Share</p></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      <a href="#"><p>Compare</p></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <a href="#"><p>Like</p></a> 
+                    </div>
+    
+                  </div>
+                </div>
+            </div>
+            <span class="new d-flex justify-content-center align-items-center">New</span>
+
+            </div>
+            
+          </div>
+          <div class=" col-lg-3 col-md-4 col-sm-6 ">
+            <div class="productCard m-2 my-4">
+              <img class="w-100 productImage" src="images/image 7.jpg" alt="">
+              <div class="cardContent">
+                <h5 class="itemName">Bed Set</h5>
+                <p class="discreption">Cute bed set</p>
+                <div class=" d-flex justify-content-between">
+                  <h6 class="productPrice">EGP 6000</h6>
+                  <p class="oldPrice">EGP 12000</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center w-100 addToCartBtnParent ">
+                <button class="addToCartBtn">Add to cart</button>
+                </div>
+                <div class="d-flex justify-content-center w-100 showProductParent ">
+                <a href="#"><button class="showProductBtn">Show Product</button></a>
+                </div>
+              <div class="secoundLayer d-flex  align-items-center">
+                <div class="w-100 text-center">
+                  <div class="cartMedia d-flex justify-content-evenly">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-share-nodes"></i>
+                      <a href="#"><p>Share</p></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      <a href="#"><p>Compare</p></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <a href="#"><p>Like</p></a> 
+                    </div>
+    
+                  </div>
+                </div>
+            </div>
+            <span class="sale d-flex justify-content-center align-items-center">-50%</span>
+
+            </div>
+            
+          </div>
+          <div class=" col-lg-3 col-md-4 col-sm-6 ">
+            <div class="productCard m-2 my-4">
+              <img class="w-100 productImage" src="images/image 8.jpg" alt="">
+              <div class="cardContent">
+                <h5 class="itemName">Couch</h5>
+                <p class="discreption">Stylish Couch</p>
+                <div class=" d-flex justify-content-between">
+                  <h6 class="productPrice">EGP 12500</h6>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center w-100 addToCartBtnParent ">
+                <button class="addToCartBtn">Add to cart</button>
+                </div>
+                <div class="d-flex justify-content-center w-100 showProductParent ">
+                <a href="#"><button class="showProductBtn">Show Product</button></a>
+                </div>
+              <div class="secoundLayer d-flex  align-items-center">
+                <div class="w-100 text-center">
+                  <div class="cartMedia d-flex justify-content-evenly">
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-share-nodes"></i>
+                      <a href="#"><p>Share</p></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                      <a href="#"><p>Compare</p></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fa-regular fa-heart"></i>
+                      <a href="#"><p>Like</p></a> 
+                    </div>
+    
+                  </div>
+                </div>
+            </div>
+            <span class="new d-flex justify-content-center align-items-center">New</span>
+
+            </div>
+            
+          </div>
+    
+  
+        </div>
+        <div class="w-100 d-flex justify-content-center py-3">
+
+          <button class="showBtn">Show More</button>
+        </div>
+      </div>
+    </div>
+    <!-- products section end -->
+
+    <!-- footer section start -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class=" my-5">
+
+  <footer class="footerPart text-center text-lg-start ">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="rounded-circle footerLogo shadow-1-strong shadow-lg d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="images/Meubel House_Logos-05.svg" height="70" alt=""
+                 loading="lazy" />
+          </div>
+
+          <p class="text-center">400 University Drive Suite 200 Coral Gables,
+            FL 33134 USA</p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Links</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!"  ><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <br>
+            <li class="mb-2">
+              <a href="#!"  ><i class="fa-brands fa-shopify"></i> Shop</a>
+            </li>
+            <br>
+            <li class="mb-2">
+              <a href="#!"  ><i class="fa-regular fa-address-card"></i> About</a>
+            </li>
+            <br>
+            <li class="mb-2">
+              <a href="#!"   ><i class="fa-solid fa-phone-volume"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Help</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!"  >Payment Options</a>
+            </li>
+            <br>
+            <li class="mb-2">
+              <a href="#!"  >Returns</a>
+            </li>
+            <br>
+            <li class="mb-2">
+              <a href="#!"  >Privacy Policies</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+     
+  </footer>
+
+</div>
+<!-- End of .container -->
+
+    <!-- footer section end -->
+
+    
+
+
+
+    <!-- js links -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

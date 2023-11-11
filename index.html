@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furnio</title>
+     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="hero">
+      <div class="heroNavbarParent">
+        <div class="heroNavbar row align-items-center ">
+          <div class="col-md-9 col-sm-9 col-xs-9 d-flex   ">
+               <div class="">
+                   <div class="d-flex align-items-center">
+                       <img src="images/Meubel House_Logos-05.svg" alt="logo">
+                       <h1 class="px-2">Furniro</h1>
+                   </div>
+               </div>
+                 <nav class="navbar navbar-expand-lg  heroNavMid">
+                     <div class="container-fluid">
+                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                       </button>
+                       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                         <div class="navbar-nav w-100 justify-content-between">
+                           <a class="nav-link active" aria-current="page" href="file:///C:/projects/furniture%20website/index.html">Home</a>
+                           <a class="nav-link" href="file:///C:/projects/furniture%20website/shop.html">Shop</a>
+                           <a class="nav-link" href="#">About</a>
+                           <a class="nav-link" href="#">Contact</a>
+                         </div>
+                       </div>
+                     </div>
+                   </nav>
+                 
+            
+                 </div>
+                 <div class="col-md-3 col-sm-3 col-xs-3 d-flex justify-content-evenly navbarIcons">
+                     <a href="#"><img src="images/mdi_account-alert-outline.svg" alt=""></a>
+                     <a href="#"><img src="images/akar-icons_search.svg" alt=""></a>
+                     <a href="#"><img src="images/akar-icons_heart.svg" alt=""></a>
+                     <a href="#" class="cartIconDiv" id="cartIcon"><img src="images/ant-design_shopping-cart-outlined.svg" alt="">
+                       <div class="cartItemsTotalNum"><b>0</b> </div>
+                     </a>
+                     
+                 </div>
+
+
+     </div> 
+      </div>
+        <div class="heroMid">
+            <img class="w-100" src="images/scandinavian-interior-mockup-wall-decal-background 1.jpg" alt="">
+            <div class="heroMidContent">
+                <b>New Arrival</b>
+                <h2>Discover Our New Collection</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                <button class="heroMidBtn">BUY NOW</button>
+            </div>
+        </div>
+      <div class="cart" id="cartModel">
+        <div class="cartContent p-4">
+          <div class="d-flex justify-content-between">
+            <h2>Shopping Cart</h2>
+            <img class="exitCart" id="closeCartBtn" src="images/Group.svg" alt="">
+          </div>
+          <div class="underLine">
+          </div>
+          <div id="cartItems">
+             
+          </div>
+          <div class="d-flex py-3 subtotal justify-content-between" id="subtotalCart">
+            <p>Subtotal</p>
+            <b class="totalPrice">EGP 0</b>
+          </div>
+          <div class="subtotalLine">
+          </div>
+          <div class="d-flex justify-content-between">
+            <button class="cartButtons">Cart</button>
+            <button class="cartButtons">Checkout</button>
+            <button class="cartButtons">Coparison</button>
+
+          </div>
+        </div>
+      </div>  
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="range">
+      <div class="rangeStart py-5 text-center">
+        <h3>Browse The Range</h3>
+        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
+      </div>
+      <div class="rangeMid  container">
+        <div class="row px-5">
+          <div class="col-md-4   text-center ">
+            <a href="#"><img src="images/image 106.jpg" alt=""></a>
+            <h4 class="py-4">Dining</h4>
+          </div>
+          <div class="col-md-4   text-center ">
+            <a href="#"><img src="images/image 100.jpg" alt=""></a>
+            <h4 class="py-4">Living</h4>
+          </div>
+          <div class="col-md-4   text-center ">
+            <a href="#"><img src="images/image 101.jpg" alt=""></a>
+            <h4 class="py-4">Bedroom</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- range section end -->
+
+    <!-- products section start -->
+    <div class="products">
+      <div class="container">
+        <h3 class="text-center">Our Products</h3>
+
+        <div class="row" id="productsContainer">
+           
+           
+  
+        </div>
+        <div class="w-100 d-flex justify-content-center py-3">
+
+          <button class="showBtn">Show More</button>
+        </div>
+      </div>
+    </div>
+    <!-- products section end -->
+    <!-- slider section start -->
+    <div class="slider">
+      <div class="row sliderDiv">
+        <div class="col-md-4 d-flex align-items-center col-sm-0 ">
+          <div class="sliderLeft">
+            <h3>50+ Beautiful rooms 
+              inspiration</h3>
+              <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+              <button class="eploreBtn">Explore More</button>
+          </div>
+        </div>
+        <div class="d-flex col-md-8 ">
+          <div class="fristPic">
+            <div class="curentBckgrnd fullSizeImg" id="fullSizeImgId">
+              <!-- <img class="w-100" src="images/24.jpg" alt=""> -->
+              <div class="imgContent p-3">
+                <div class="contentt">
+                  <div class="d-flex pp   justify-content-between">
+                    <p>01</p>
+                    <div class="midLine">
+                      
+                    </div>
+                    <p>Bed </p>
+                    <p>Room</p>
+                  </div>
+                  
+                </div>
+  
+              </div>
+              <div class="arrowDiv d-flex justify-content-center align-items-center">
+               <a href="#"><img class="arrow" src="images/Right 16px.svg" alt=""></a> 
+              </div>
+            </div>
+          </div>
+          <div class="secoundPic">
+            <div class="midBckgrnd midImg cropedDiv" id="midImgId">
+              <!-- <img class="w-100" src="images/Rectangle 25.jpg" alt=""> -->
+            </div>
+           
+  
+          </div>
+          <div class="thirdPic">
+            <div class="prevBckgrnd cropedDiv cropedImg" id="cropedImgId">
+              <!-- <img class="cropedImg w-100" src="images/Rectangle 24 (1).jpg" alt=""> -->
+            </div>
+          </div>
+        </div>
+        <div class="nextSlide text-center" id="nextSlideId">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="prevSlide text-center" id="prevSlideId">
+          <i class="fa-solid fa-chevron-right fa-rotate-180"></i>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- slider section end -->
+    <!-- imgs section start -->
+    <div class="">
+      <div class="row">
+        <div class="imgs col-md-12 col-sm-12 col-xs-12 text-center">
+          <p>Share your setup with</p>
+          <h3>#FuniroFurniture</h3>
+          <div class="img1 bg-danger">
+            <img  class="w-100" src="images/Rectangle 36.jpg" alt="">
+          </div>
+          <div class="img2 bg-danger">
+            <img  class="w-100" src="images/Rectangle 37.jpg" alt="">
+          </div>
+          <div class="img3 bg-danger">
+            <img  class="w-100" src="images/Rectangle 38.jpg" alt="">
+          </div>
+          <div class="img4">
+            <img  class="w-100" src="images/Rectangle 39.jpg" alt="">
+          </div>
+          <div class="img5">
+            <img  class="w-100" src="images/Rectangle 40.jpg" alt="">
+          </div>
+          <div class="img6">
+            <img  class="w-100" src="images/Rectangle 43.jpg" alt="">
+          </div>
+          <div class="img7">
+            <img  class="w-100" src="images/Rectangle 41.jpg" alt="">
+          </div>
+          <div class="img8">
+            <img  class="w-100" src="images/Rectangle 45.jpg" alt="">
+          </div>
+          <div class="img9">
+            <img  class="w-100" src="images/Rectangle 44.jpg" alt="">
+          </div>
+
+        
+
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- imgs section end -->
+
+    <!-- footer section start -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class=" my-5">
+
+  <footer class="footerPart text-center text-lg-start ">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="rounded-circle footerLogo shadow-1-strong shadow-lg d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="images/Meubel House_Logos-05.svg" height="70" alt=""
+                 loading="lazy" />
+          </div>
+
+          <p class="text-center">400 University Drive Suite 200 Coral Gables,
+            FL 33134 USA</p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Links</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!"  ><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <br>
+            <li class="mb-2">
+              <a href="#!"  ><i class="fa-brands fa-shopify"></i> Shop</a>
+            </li>
+            <br>
+            <li class="mb-2">
+              <a href="#!"  ><i class="fa-regular fa-address-card"></i> About</a>
+            </li>
+            <br>
+            <li class="mb-2">
+              <a href="#!"   ><i class="fa-solid fa-phone-volume"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Help</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!"  >Payment Options</a>
+            </li>
+            <br>
+            <li class="mb-2">
+              <a href="#!"  >Returns</a>
+            </li>
+            <br>
+            <li class="mb-2">
+              <a href="#!"  >Privacy Policies</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-2"></i>Warsaw, 57 Street, Poland</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+     
+  </footer>
+
+</div>
+<!-- End of .container -->
+
+    <!-- footer section end -->
+
+    
+
+
+
+    <!-- js links -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
